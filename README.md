@@ -1,108 +1,67 @@
-0x00. ES6 Basics
+0x04. Typescript
 JavaScript
-ES6
+TypeScript
  Weight: 1
- Ongoing second chance project - started Jun 24, 2024 6:00 AM, must end by Jun 29, 2024 6:00 AM
- An auto review will be launched at the deadline
-Concepts
-For this project, we expect you to look at these concepts:
+ Project over - took place from Jul 3, 2024 6:00 AM to Jul 4, 2024 6:00 AM
+ Manual QA review was done on Jul 13, 2024 11:16 AM
+In a nutshell…
+Manual QA review: 0.0/67 mandatory
+Altogether:  0.0%
+Mandatory: 0.0%
+Optional: no optional tasks
+Overall comment:
+Project was failed automatically.
 
-JavaScript programming
-Software Linter
 
 
 Resources
 Read or watch:
 
-ECMAScript 6 - ECMAScript 2015
-Statements and declarations
-Arrow functions
-Default parameters
-Rest parameter
-Javascript ES6 — Iterables and Iterators
+TypeScript in 5 minutes
+TypeScript documentation
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-What ES6 is
-New features introduced in ES6
-The difference between a constant and a variable
-Block-scoped variables
-Arrow functions and function parameters default to them
-Rest and spread function parameters
-String templating in ES6
-Object creation and their properties in ES6
-Iterators and for-of loops
+Basic types in Typescript
+Interfaces, Classes, and functions
+How to work with the DOM and Typescript
+Generic types
+How to use namespaces
+How to merge declarations
+How to use an ambient Namespace to import an external library
+Basic nominal typing with Typescript
 Requirements
-General
-All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
 Allowed editors: vi, vim, emacs, Visual Studio Code
 All your files should end with a new line
+All your files will be transpiled on Ubuntu 18.04
+Your TS scripts will be checked with jest (version 24.9.* )
 A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the js extension
-Your code will be tested using the Jest Testing Framework
-Your code will be analyzed using the linter ESLint along with specific rules that we’ll provide
-All of your functions must be exported
-Setup
-Install NodeJS 12.11.x
-(in your home directory):
-
-curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
-$ nodejs -v
-v12.11.1
-$ npm -v
-6.11.3
-Install Jest, Babel, and ESLint
-in your project directory, install Jest, Babel and ESList by using the supplied package.json and run npm install.
-
-Configuration files
-Add the files below to your project directory
+Your code should use the ts extension when possible
+The Typescript compiler should not show any warning or error when compiling your code
+Configuration Files
+Please use these files for the following tasks
 
 package.json
-Click here to show/hide file contents
-babel.config.js
-Click here to show/hide file contents
+Click to show/hide file contents
 .eslintrc.js
-Click here to show/hide file contents
-Finally…
-Don’t forget to run npm install from the terminal of your project folder to install all necessary project dependencies.
-
+Click to show/hide file contents
+tsconfig.json
+Click to show/hide file contents
+webpack.config.js
+Click to show/hide file contents
 Tasks
-0. Const or let?
+0. Creating an interface for a student
 mandatory
-Modify
+Score: 0.0% (Checks completed: 0.0%)
+Copy the following configuration files (provided above) into the task_0 directory: package.json, .eslintrc.js, tsconfig.json, webpack.config.js
 
-function taskFirst to instantiate variables using const
-function taskNext to instantiate variables using let
-export function taskFirst() {
-  var task = 'I prefer const when I can.';
-  return task;
-}
+Write your code in the main.ts file:
 
-export function getLast() {
-  return ' is okay';
-}
+Write an interface named Student that accepts the following elements: firstName(string), lastName(string), age(number), and location(string)
+Create two students, and create an array named studentsList containing the two variables
+Using Vanilla Javascript, render a table and for each elements in the array, append a new row to the table
+Each row should contain the first name of the student and the location
+Requirements:
 
-export function taskNext() {
-  var combination = 'But sometimes let';
-  combination += getLast();
-
-  return combination;
-}
-Execution example:
-
-bob@dylan:~$ cat 0-main.js
-import { taskFirst, taskNext } from './0-constants.js';
-
-console.log(`${taskFirst()} ${taskNext()}`);
-
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 0-main.js 
-I prefer const when I can. But sometimes let is okay
-bob@dylan:~$ 
-Repo:
-
-GitHub repository: alx-backend-javascript
-Directory: 0x00-ES6_basic
-File: 0-constants.js
+When running, Webpack should return No type errors found.
+Every variable should use TypeScript when possible.
